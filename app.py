@@ -11,7 +11,8 @@ from styles.custom_css import apply_custom_css
 from PIL import Image
 # Importeert os, voor het werken met bestanden en mappen op je computer.
 import os
-
+import sys
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 # Deze functie voegt de aangepast CSS stijl toe aan de streamlit applicatie.
 # Gemaakt via ChatGPT.
 apply_custom_css()
